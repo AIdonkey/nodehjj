@@ -1,7 +1,11 @@
 const PI = 3.14;
-exports.area = function (r) {
+let area = function (r) {
   return PI * r*r
 }
-exports.circumference = function (r) {
+let circumference = function (r) {
   return 2 * PI * r
 }
+module.exports = ({
+  area: area,
+  circumference: circumference
+})
